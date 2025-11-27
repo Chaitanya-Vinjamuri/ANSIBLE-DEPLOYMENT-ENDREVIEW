@@ -32,7 +32,7 @@ jobs:
           context: ./Zapkart-Backend
           file: ./Zapkart-Backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/zapkart-endreview-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./Zapkart
           file: ./Zapkart/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/zapkart-endreview-frontend:latest
